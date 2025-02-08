@@ -10,14 +10,14 @@ public class Calculadora {
         int parteReal = realNum1 + realNum2;
         int parteImaginaria = imaginarioNum1 + imaginarioNum2;
 
-        return parteReal + " + " + parteImaginaria + "i";
+        return parteReal + (parteImaginaria>0? " + ":"") + parteImaginaria + "i";
     }
 
     public String resta(int realNum1, int imaginarioNum1, int realNum2, int imaginarioNum2){
         int parteReal = realNum1 - realNum2;
         int parteImaginaria = imaginarioNum1 - imaginarioNum2;
 
-        return parteReal + " + " + parteImaginaria + "i";
+        return parteReal + (parteImaginaria>0? " + ":"") + parteImaginaria + "i";
     }
 
     public String multiplicacion(int realNum1, int imaginarioNum1, int realNum2, int imaginarioNum2){
