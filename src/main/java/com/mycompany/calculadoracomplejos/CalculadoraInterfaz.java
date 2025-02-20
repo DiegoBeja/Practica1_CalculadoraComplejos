@@ -20,16 +20,8 @@ public class CalculadoraInterfaz extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        parteReal1 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        parteImaginaria1 = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        parteReal2 = new javax.swing.JTextField();
-        parteImaginaria2 = new javax.swing.JTextField();
         suma = new javax.swing.JButton();
         resta = new javax.swing.JButton();
         multiplicacion = new javax.swing.JButton();
@@ -38,40 +30,16 @@ public class CalculadoraInterfaz extends javax.swing.JFrame {
         resultadoTexto = new javax.swing.JTextArea();
         resultado = new javax.swing.JButton();
         limpiar = new javax.swing.JButton();
+        numeroComplejo1 = new javax.swing.JTextField();
+        numeroComplejo2 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setText("Calculadora numeros complejos");
 
-        parteReal1.setColumns(4);
-        parteReal1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                parteReal1ActionPerformed(evt);
-            }
-        });
-
         jLabel2.setText("Ingrese el primer numero complejo");
 
-        jLabel3.setText("Parte real");
-
-        jLabel4.setText("Parte imaginaria");
-
-        parteImaginaria1.setColumns(4);
-
         jLabel5.setText("Ingrese el segundo numero complejo");
-
-        jLabel6.setText("Parte real");
-
-        jLabel7.setText("Parte imaginaria");
-
-        parteReal2.setColumns(4);
-
-        parteImaginaria2.setColumns(4);
-        parteImaginaria2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                parteImaginaria2ActionPerformed(evt);
-            }
-        });
 
         suma.setText("+");
         suma.addActionListener(new java.awt.event.ActionListener() {
@@ -126,92 +94,68 @@ public class CalculadoraInterfaz extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(129, 129, 129))
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel5)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(12, 12, 12)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel4)
-                                    .addComponent(jLabel3))
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(parteImaginaria1)
-                                    .addComponent(parteReal1))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(multiplicacion)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(division)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(limpiar))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(suma)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(resta)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(resultado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addComponent(jScrollPane1)))
-                            .addComponent(jLabel2)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(numeroComplejo2)
+                                .addGap(81, 81, 81))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jLabel5))
+                                .addComponent(numeroComplejo1, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(92, 92, 92)))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel7)
-                                    .addComponent(jLabel6))
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(parteReal2)
-                                    .addComponent(parteImaginaria2))))
-                        .addGap(211, 211, 211)))
-                .addGap(36, 36, 36))
+                                .addComponent(multiplicacion)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(division)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(limpiar))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(suma)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(resta)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(resultado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jScrollPane1)))
+                    .addComponent(jLabel2))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addGap(25, 25, 25)
+                .addGap(31, 31, 31)
                 .addComponent(jLabel2)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(parteReal1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4)
-                            .addComponent(parteImaginaria1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(34, 34, 34)
+                        .addComponent(numeroComplejo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(70, 70, 70)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(suma)
                                 .addComponent(resta)
                                 .addComponent(resultado))
                             .addComponent(jLabel5))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel6)
-                            .addComponent(multiplicacion)
-                            .addComponent(division)
-                            .addComponent(limpiar)
-                            .addComponent(parteReal2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(9, 9, 9)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel7)
-                            .addComponent(parteImaginaria2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(multiplicacion)
+                                    .addComponent(division)
+                                    .addComponent(limpiar)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(15, 15, 15)
+                                .addComponent(numeroComplejo2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(52, Short.MAX_VALUE))
+                .addContainerGap(67, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -228,37 +172,33 @@ public class CalculadoraInterfaz extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void parteImaginaria2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_parteImaginaria2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_parteImaginaria2ActionPerformed
-
-    private void parteReal1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_parteReal1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_parteReal1ActionPerformed
-
     private void resultadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resultadoActionPerformed
-       switch(operacion){
+       String [] primerNumeroComplejo = numeroComplejo1.getText().split("[+i]");
+       String [] segundoNumeroComplejo = numeroComplejo2.getText().split("[+i]");
+        switch(operacion){
            case 0:
                System.out.println("Seleccione una operacion");
                break;
            case 1:
-               resultadoFinal = calculadora.suma(Integer.parseInt(parteReal1.getText()), Integer.parseInt(parteImaginaria1.getText()), Integer.parseInt(parteReal2.getText()), Integer.parseInt(parteImaginaria2.getText()));
-               //System.out.print(resultadoFinal);
+               resultadoFinal = calculadora.suma(Float.parseFloat(primerNumeroComplejo[0]), Float.parseFloat(primerNumeroComplejo[1]), Float.parseFloat(segundoNumeroComplejo[0]), Float.parseFloat(segundoNumeroComplejo[1]));
+               System.out.print(primerNumeroComplejo[0]);
+               System.out.println(primerNumeroComplejo[1]);
+               //System.out.println(primerNumeroComplejo[2]);
                resultadoTexto.setText(resultadoFinal);
                break;
            case 2:
-               resultadoFinal = calculadora.resta(Integer.parseInt(parteReal1.getText()), Integer.parseInt(parteImaginaria1.getText()), Integer.parseInt(parteReal2.getText()), Integer.parseInt(parteImaginaria2.getText()));
+               resultadoFinal = calculadora.resta(Float.parseFloat(primerNumeroComplejo[0]), Float.parseFloat(primerNumeroComplejo[1]), Float.parseFloat(segundoNumeroComplejo[0]), Float.parseFloat(segundoNumeroComplejo[1]));
                //System.out.print(resultadoFinal);
                resultadoTexto.setText(resultadoFinal);
                break;
                
            case 3:
-               resultadoFinal = calculadora.multiplicacion(Integer.parseInt(parteReal1.getText()), Integer.parseInt(parteImaginaria1.getText()), Integer.parseInt(parteReal2.getText()), Integer.parseInt(parteImaginaria2.getText()));
+               resultadoFinal = calculadora.multiplicacion(Float.parseFloat(primerNumeroComplejo[0]), Float.parseFloat(primerNumeroComplejo[1]), Float.parseFloat(segundoNumeroComplejo[0]), Float.parseFloat(segundoNumeroComplejo[1]));
                resultadoTexto.setText(resultadoFinal);
                break;
                
            case 4:
-               resultadoFinal = calculadora.division(Integer.parseInt(parteReal1.getText()), Integer.parseInt(parteImaginaria1.getText()), Integer.parseInt(parteReal2.getText()), Integer.parseInt(parteImaginaria2.getText()));
+               resultadoFinal = calculadora.division(Float.parseFloat(primerNumeroComplejo[0]), Float.parseFloat(primerNumeroComplejo[1]), Float.parseFloat(segundoNumeroComplejo[0]), Float.parseFloat(segundoNumeroComplejo[1]));
                resultadoTexto.setText(resultadoFinal);
                break;
        }
@@ -311,19 +251,13 @@ public class CalculadoraInterfaz extends javax.swing.JFrame {
     private javax.swing.JButton division;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton limpiar;
     private javax.swing.JButton multiplicacion;
-    private javax.swing.JTextField parteImaginaria1;
-    private javax.swing.JTextField parteImaginaria2;
-    private javax.swing.JTextField parteReal1;
-    private javax.swing.JTextField parteReal2;
+    private javax.swing.JTextField numeroComplejo1;
+    private javax.swing.JTextField numeroComplejo2;
     private javax.swing.JButton resta;
     private javax.swing.JButton resultado;
     private javax.swing.JTextArea resultadoTexto;
