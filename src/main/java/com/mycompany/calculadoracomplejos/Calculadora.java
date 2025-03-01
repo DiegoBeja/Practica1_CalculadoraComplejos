@@ -2,15 +2,16 @@ package com.mycompany.calculadoracomplejos;
 import java.text.DecimalFormat;
 
 public class Calculadora {
+    Pila<String> resultados = new Pila();
     public Calculadora(){
 
     }
 
-    public String suma(float realNum1, float imaginarioNum1, float realNum2, float imaginarioNum2){
-        float parteReal = realNum1 + realNum2;
-        float parteImaginaria = imaginarioNum1 + imaginarioNum2;
-
-        return parteReal + (parteImaginaria>0? " + ":"") + parteImaginaria + "i";
+    public NumeroComplejo suma(NumeroComplejo num1, NumeroComplejo num2){
+        NumeroComplejo resultado = new NumeroComplejo(num1.getReal() + num2.getReal(), num1.getImaginario() + num2.getImaginario());
+       
+        return resultado;
+        //return parteReal + (parteImaginaria>0? " + ":"") + parteImaginaria + "i";
     }
 
     public String resta(float realNum1, float imaginarioNum1, float realNum2, float imaginarioNum2){
