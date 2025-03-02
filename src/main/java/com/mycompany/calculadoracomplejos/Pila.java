@@ -1,8 +1,8 @@
 package com.mycompany.calculadoracomplejos;
 
 public class Pila <T>{
-    private T [] elementos;
-    private int tope;
+    T [] elementos;
+    int tope;
 
     public Pila(){
         elementos = (T[]) new Object[100000];

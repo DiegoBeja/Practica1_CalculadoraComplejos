@@ -30,11 +30,8 @@ public class CalculadoraComplejos {
                         float entera2 = scanner.nextFloat();
                         System.out.print("Ingrese la parte imaginaria del segundo numero:");
                         float imaginario2 = scanner.nextFloat();
-                        
-                        NumeroComplejo num1 = new NumeroComplejo(entera1, imaginario1);
-                        NumeroComplejo num2 = new NumeroComplejo(entera2, imaginario2);
 
-                        System.out.println(x.suma(num1, num2));
+                        System.out.println(x.suma(entera1, imaginario1, entera2, imaginario2));
                         break;
 
                     case 2:
@@ -46,11 +43,8 @@ public class CalculadoraComplejos {
                         float entera2Resta = scanner.nextFloat();
                         System.out.print("Ingrese la parte imaginaria del segundo numero:");
                         float imaginario2Resta = scanner.nextFloat();
-                        
-                        NumeroComplejo num1Resta = new NumeroComplejo(entera1Resta, imaginario1Resta);
-                        NumeroComplejo num2Resta = new NumeroComplejo(entera2Resta, imaginario2Resta);
 
-                        System.out.println(x.resta(num1Resta, num2Resta));
+                        System.out.println(x.resta(entera1Resta, imaginario1Resta, entera2Resta, imaginario2Resta));
                         break;
 
                     case 3:
@@ -62,11 +56,8 @@ public class CalculadoraComplejos {
                         float entera2Multi = scanner.nextFloat();
                         System.out.print("Ingrese la parte imaginaria del segundo numero:");
                         float imaginario2Multi = scanner.nextFloat();
-                        
-                        NumeroComplejo num1Multi = new NumeroComplejo(entera1Multi, imaginario1Multi);
-                        NumeroComplejo num2Multi = new NumeroComplejo(entera2Multi, imaginario2Multi);
 
-                        System.out.println(x.multiplicacion(num1Multi, num2Multi));
+                        System.out.println(x.multiplicacion(entera1Multi, imaginario1Multi, entera2Multi, imaginario2Multi));
                         break;
 
                     case 4:
@@ -78,11 +69,8 @@ public class CalculadoraComplejos {
                         float entera2Div = scanner.nextFloat();
                         System.out.print("Ingrese la parte imaginaria del segundo numero:");
                         float imaginario2Div = scanner.nextFloat();
-                        
-                        NumeroComplejo num1Div = new NumeroComplejo(entera1Div, imaginario1Div);
-                        NumeroComplejo num2Div = new NumeroComplejo(entera2Div, imaginario2Div);
 
-                        System.out.println(x.division(num1Div, num2Div));
+                        System.out.println(x.division(entera1Div, imaginario1Div, entera2Div, imaginario2Div));
                         break;
                 }
                 break;

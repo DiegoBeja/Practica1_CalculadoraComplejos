@@ -1,44 +1,31 @@
 package com.mycompany.calculadoracomplejos;
 
 public class NumeroComplejo {
-    private float parteReal;
-    private float parteImaginaria;
+    private int parteReal;
+    private int parteImaginaria;
     
     public NumeroComplejo(){
         
     }
     
-    public NumeroComplejo(float parteReal, float parteImaginaria){
+    public NumeroComplejo(int parteReal, int parteImaginaria){
         this.parteReal = parteReal;
         this.parteImaginaria = parteImaginaria;  
     }
     
-    public void setReal(float real){
+    public void setReal(int real){
         this.parteReal = real;
     }
     
-    public float getReal(){
+    public int getReal(){
         return parteReal;
     }
     
-    public void setImaginario(float imaginario){
+    public void setImaginario(int imaginario){
         this.parteImaginaria = imaginario;
     }
     
-    public float getImaginario(){
+    public int getImaginario(){
         return this.parteImaginaria;
-    }
-    
-    @Override
-    public String toString(){
-        if(parteImaginaria == 0){
-            return parteReal + "";
-        } else if(parteReal == 0){
-            return parteImaginaria + "i";
-        } else if(parteImaginaria < 0){
-            return parteReal + "-" + (-parteImaginaria) + "i";
-        } else {
-            return parteReal + "+" + parteImaginaria + "i";
-        }
     }
 }
