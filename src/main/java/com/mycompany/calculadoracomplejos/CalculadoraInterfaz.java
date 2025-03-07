@@ -176,6 +176,15 @@ public class CalculadoraInterfaz extends javax.swing.JFrame {
             NumeroComplejo ultimoComplejoHistorial = numerosComplejos.pop();
             numeroComplejo1.setText(ultimoComplejoHistorial.toString());
             numeroComplejo2.setText("");
+            
+            String lol = historial.getText().trim();
+            int ultimoIndex = lol.lastIndexOf("\n");
+            if(ultimoIndex != -1){
+                historial.setText(lol.substring(0, ultimoIndex));
+            } else{
+                historial.setText("");
+            }
+            
         } else{
             JOptionPane.showMessageDialog(null, "Ya no hay numeros en la pila", "Error", JOptionPane.ERROR_MESSAGE);
         }
